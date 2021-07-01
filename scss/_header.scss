@@ -1,0 +1,23 @@
+nav {
+    list-style-type: none;
+    text-align: center;
+    margin-top: -14px;
+
+    >ul >li {
+    background-color: yellow;
+    display: inline-block;
+    margin-right: 30px;
+    @include breakpoint(medium){
+       // float: left;
+    }
+    } }
+
+.transblock {
+    background-color: #000000;
+    opacity: 0.6;
+    height: 750px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 119px;
+}
+
