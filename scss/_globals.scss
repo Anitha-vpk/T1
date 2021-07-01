@@ -1,0 +1,48 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+body {
+  font-family: 'Castoro', serif;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.grid {
+  display: flex;
+}
+.bg {
+  background-image: url('../images/img2.jpg');
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height:750px;
+  
+  @include breakpoint(medium){
+  background-size: cover;
+  }
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+h1, h2, p {
+  color: #ffffff;
+  padding: 3%;
+}
+
+button {
+  background-color:rgb(255, 165, 0);
+  padding: 0 30px 0 30px;
+  color: white;
+}
